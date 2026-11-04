@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel", "torch"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modulated_deform_conv"
+version = "0.3.0"
+dependencies = ["torch"]
+
+[project.optional-dependencies]
+musa = ["torchada>=0.1.48"]
